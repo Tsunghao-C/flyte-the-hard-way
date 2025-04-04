@@ -25,6 +25,7 @@ microk8s enable hostpath-storage
 curl -sl https://raw.githubusercontent.com/davidmirror-ops/flyte-the-hard-way/main/docs/on-premises/single-node/manifests/onprem-flyte-dependencies.yaml > onprem-flyte-dependencies.yaml
 ```
 3. Make sure to adjust sensitive values like `MINIO_ROOT_PASSWORD` and `POSTGRES_PASSWORD` before submitting the manifest:
+   note: Do not change `MINIO_ROOT_PASSWORD`, for first trial run!
 ``` bash
 kubectl apply -f onprem-flyte-dependencies.yaml
 ```
