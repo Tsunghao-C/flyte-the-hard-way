@@ -13,6 +13,7 @@ In this tutorial, we'll use Minio with a single bucket as the object storage pro
 
 1. Prepare your K8s cluster to provision Persistent Volumes:
 ```bash
+# inside the multipass VM
 microk8s enable hostpath-storage
 ```
 > NOTE: for other K8s distributions, verify the provisioner available for local storage, typically associated with a StorageClass (`kubectl get storageclass`). If there isn't any, consider using [this implementation](https://github.com/rimusz/hostpath-provisioner) of the hostpath provisioner. To learn more about how Kubernetes handles data persistency, go to [the docs](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
