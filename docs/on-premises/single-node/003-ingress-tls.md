@@ -4,10 +4,10 @@ To avoid the need to open port-forward sessions to connect to the Flyte instance
 
 ## Add Ingress networking
 
-1. Deploy the NGINX Ingress controller in your K8s node:
+1. Deploy the NGINX Ingress controller in your K8s node (in VM):
 
 ```bash
-microks enable ingress
+microk8s enable ingress
 ```
 >NOTE: for other distributions, check out the NGINX [installation instructions](https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-helm/)
 
