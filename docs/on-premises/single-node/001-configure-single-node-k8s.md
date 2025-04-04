@@ -49,7 +49,7 @@ sudo usermod -a -G microk8s ubuntu
 ``` 
 6. Once installed, obtain the K8s client config:
 ``` bash
-cat /var/snap/microk8s/current/credentials/client.config
+microk8s config
 ```
 7. Exit the shell session
 ```bash
